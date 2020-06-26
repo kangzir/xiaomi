@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reas.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/communal.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1876882_iv2h4zy558e.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/pan.css">
+    <link rel="icon" href="./img/favicon.ico">
+    <script src="./jQuery库/jquery-1.12.3.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <title>我的购物车 - 小米商城</title>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <div class="header-wrap">
+     <div class="header w clearfix">
+      <div class="title-logo clearfix">
+       <div class="logo-img">
+        <div class="">
+            <a href="./idnex.html"><img src="./img/mi-home.png" alt=""></a>
+            <a href="./idnex.html"><img src="./img/mi-logo.png" alt=""></a>
+        </div>
+       </div>
+       <div class="logo-h2">
+        <h2>我的购物车</h2>
+        <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+       </div>
+      </div>
+      <div class="entrance">
+       <a href="./Mindex.html">登录</a>
+       <span>|</span>
+       <a href="./zhuce.html">注册</a>
+      </div>
+     </div>
+    </div>
+
+    <div class="product-panel w">
+     <div class="product">
+     <div class="row liebiao w">
+      <div class="col col-img">
+       <input type="checkbox" class="quan">全选
+       <input type="checkbox" class="bu">不选
+      </div>
+      <div class="col col-name"> 商品名称</div>
+      <div class="col col-price"> 单价</div>
+      <div class="col class-num"> 数量</div>
+      <div class="col col-total">小计 </div>
+      <div class="col col-action">操作</div>
+     </div>
+
+     <div class="chan-list">
+
+         <div class="row xiang">
+            <div class="col col-check"><input type="checkbox" class="nrong"></div>
+            <div class="col col-img"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1567422769.05534228.jpg?thumb=1&w=99&h=99" alt=""></div>
+            <div class="col-name">Redmi Note 8 6GB+128GB 曜石黑 128GB</div>
+            <div class="col col-price">1299元</div>
+            <div class="col col-num"><input type="number" name="points" min="1"max="10" value="1"></div>
+            <div class="col col-total">1299元</div>
+            <div class="col col-action">
+                <button type="button" class="close">
+              <span aria-hidden="true"  data-toggle="modal" data-target="#mydel">&times;</span>
+            </button>
+         </div>
+          <!-- 模态框-->
+    <div class="modal fade" id="mydel" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myZceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+         <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- 体部区域 -->
+         <div class="modal-body">
+        <h3>确定删除吗？</h3>
+         </div>
+        <!-- 底部区域 -->
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">确定</button>
+         <button type="button" class="btn btn-primary"  data-dismiss="modal">取消</button>
+        </div>
+         </div>
+        </div>
+        </div>
+    </div>
+<!--  -->
+<!--  -->
+      <div class="item-box">
+          
+        <div class="item-sub-box">
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             意外保障服务
+             <span> 99元</span>
+             <a href="">了解意外保护 ></a>
+            </div> 
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             碎屏保障服务29元
+             <span> (省 30元)</span>
+             <a href="">了解意外保护 ></a>
+            </div>
+        </div>
+        <div class="item-sub-box">
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             延长保修服务14元
+             <span> 99元</span>
+             <a href="">了解意外保护 ></a>
+            </div>
+        </div> 
+        <div class="item-sub-box">
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             云空间年卡500G119.5元
+             <span> (省 119.5元)</span>
+             <a href="">了解云空间服务 ></a>
+            </div>
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             云空间年卡200G79.5元
+             <span> (省 79.5元)</span>
+             <a href="">了解云空间服务 ></a>
+            </div>
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             云空间年卡 50G24.5元
+             <span> (省 24.5元)</span>
+             <a href="">了解云空间服务 ></a>
+            </div>
+            <div class="extend-buy">
+             <i class="iconfont icon-jiahao"></i>
+             云空间月卡 50G6元 
+             <span></span>
+             <a href="">了解云空间服务 ></a>
+            </div>
+        </div>
+        <div class="item-sub-box">
+            <div class="extend-buy"> 
+             <i class="iconfont icon-jiahao"></i>
+             +399元得小米小爱老师 白色 399元
+             <span> ( 省 100 元 )</span>
+             <a href=""> ></a>
+            </div>
+        </div>
+
+      </div>
+
+      
+     </div>
+     
+     </div>
+    </div>
+
+
+    <div class="continue-wrap w">
+        <div class="continue clearfix">
+         <div class="goon">
+          <a href="./idnex.html">继续购物</a> 
+          <span>共<i>1</i>件商品，已选择 <i>0</i>件</span>
+         </div>
+         <span>
+             合计：
+             <em>0</em>
+             元
+             <a id="form-btn" href="#">去结算</a>
+         </span>
+         <div class="title-toshi">
+            请勾选需要结算的商品
+         </div>
+        </div>
+       </div>
+       <!--  -->
+       <!--  -->
+       <!--  -->
+       <div class="commodity-list">
+        <div class="commodity w">
+         <div class="commodity-titile">
+          <h2>
+           <span>买购物车中商品的人还买了</span>
+          </h2>
+         </div>
+         <div class="commodity-item">
+          <ul>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+            <li>
+               <a href="#">
+                <img src="./img/shoji.png">
+                <h6>Redmi Note 8 6GB+128GB</h6>
+                <p>1299元</p>
+                <div>263</div>
+              </a>
+              <div class="join-cart">
+               <a href="javascript:void(0);">加入购物车</a>
+              </div>
+              <div class="join-hint">
+               <a href="">成功加入购物车</a>
+              </div>
+            </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+
+
+
+       <div class="footer-aa">
+        <div class="w">
+          <div class="site-footer">
+           <div class="footer-service">
+            <ul class="">
+              <li class="yvy"><a href="#"><i class="iconfont icon-buoumaotubiao41"></i> 预约维修服务</a></li>
+              <li><a href="#"><i class="iconfont icon-7"></i>7填无理由退货</a></li>
+              <li><a href="#"><i class="iconfont icon-15tianwuliyoutuihuo"></i>15填免费换货</a></li>
+              <li><a href="#"><i class="iconfont icon-lihe"></i>满99元包邮</a></li>
+              <li><a href="#"><i class="iconfont icon-icon-test"></i>520余家售后网点</a></li>
+            </ul>
+           </div>
+            <div class="list-service clearfix">
+            <dl>
+              <dt>帮助中心</dt>
+              <dd><a href="#">账号管理</a></dd>
+              <dd><a href="#">账号管理</a></dd>
+              <dd><a href="#">账号管理</a></dd>
+            </dl>
+            <dl>
+              <dt>服务支持</dt>
+              <dd><a href="#">售后政策</a></dd>
+              <dd><a href="#">自助服务</a></dd>
+              <dd><a href="#">相关下载</a></dd>
+            </dl>
+            <dl>
+              <dt>了解小米</dt>
+              <dd><a href="#">小米之家</a></dd>
+              <dd><a href="#">服务网点</a></dd>
+              <dd><a href="#">授权体验店</a></dd>
+            </dl>
+            <dl>
+              <dt>加入小米</dt>
+              <dd><a href="#">投资者关系</a></dd>
+              <dd><a href="#">账号管理</a></dd>
+              <dd><a href="#">企业社会责任</a></dd>
+              <dd><a href="#">企业社会责任</a></dd>
+              <dd><a href="#">小米之家</a></dd>
+            </dl>
+            <dl>
+              <dt>关注我们</dt>
+              <dd><a href="#">新浪微博</a></dd>
+              <dd><a href="#">官方微信</a></dd>
+              <dd><a href="#">联系我们</a></dd>
+              <dd><a href="#">公益基金会</a></dd>
+            </dl>
+            <dl>
+              <dt>特色服务</dt>
+              <dd><a href="#">F 码通道</a></dd>
+              <dd><a href="#">礼物码</a></dd>
+              <dd><a href="#">防伪查询</a></dd>
+            </dl>
+            <div class="ai-400">
+             <h6>400-100-5678</h6>
+             <p>8:00-18:00（仅收市话费）</p>
+             <button>人工客服</button>
+             <div>
+               关注小米:
+               <a href="#"></a>
+               <a href="#"></a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="site-info">
+           <p class="">
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米官网</a>
+            <span>|</span>
+            <a href="#">小米天猫店</a>
+            <span>|</span>
+            <a href="#">小米商城用户协议</a>
+            <span>|</span>
+            <a href="#">小米集团隐私政策</a>
+            <span>|</span>
+            <a href="#">小米集团隐私政策</a>
+            <span>|</span>
+            <a href="#">小米公司儿童信息保护规则</a>
+            <span>|</span>
+            <a href="#">Select Location</a>
+           </p>
+           <p>
+            <a href="#">© mi.com</a>京ICP证110507号
+            <a href="#">京ICP备10046444号</a>
+            <a href="#">京公网安备11010802020134号</a>
+            <a href="#">京网文[2020]0276-042号</a>
+            <a href="#">（京）网械平台备字（2018）第00005号</a>
+            <a href="#">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+            <a href="#">营业执照</a>
+            <a href="#">医疗器械质量公告</a>
+            <a href="#">增值电信业务许可证</a>
+            网络食品经营备案（京）【2018】WLSPJYBAHF-12 
+            <a href="#">食品经营许可证</a>
+            违法和不良信息举报电话：185-0130-1238 
+            <a href="#">知识产权侵权投诉</a>
+            本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+           </p>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+    var nrong = $('.nrong')
+    $('.quan').click(function(){
+        nrong.prop('checked',true)
+        $('.bu').prop('checked',false)
+        $('.item-box').show()
+        $('.title-toshi').hide()
+
+        $("#form-btn").css({
+        background:'#ff6700',
+            color:'#ffffff',
+        })
+    })
+    $('.bu').click(function(){
+        nrong.prop('checked',false) 
+        $('.quan').prop('checked',false) 
+        $('.item-box').hide()
+        $('.title-toshi').show()
+
+        $("#form-btn").css({
+        background:'#E0E0E0',
+            color:'#adabab',
+        })
+    })
+
+    // $('input:chekbox').prop('checked',false)
+    
+ </script>
+<script>
+    var index
+      $('.commodity-item ul li').click(function(){
+        index = $(this).index()
+         console.log(index);
+        if($(this).find('.join-cart')){
+            $('.join-hint').eq(index).stop(true).slideDown().delay('1000').slideUp()
+        }
+    })
+    
+ </script>
+</html>

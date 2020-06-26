@@ -1,0 +1,109 @@
+.commodity{
+ .commodity-titile{
+    margin-top: 80px;
+    h2{
+     position: relative;
+     border-bottom: 1px solid #dad9d9;
+     span{
+         position: absolute;
+         top: -20px;
+         left: 50%;
+         transform: translateX(-50%);
+        width:480px;
+        background-color: #F5F5F5;
+        padding: 0 60px;
+        font-size: 30px;
+        color: #757575;
+     }
+    }
+ }
+ .commodity-item{
+     width: 100%;
+     height: 614px;
+     margin-top: 50px;
+     ul{
+         padding: 0px;
+        li{
+         float: left;
+         width: 234px;
+         height: 300px;
+         background-color: #ffffff;
+         margin-right: 14px;
+         text-align: center;
+         margin-bottom: 14px;
+         overflow: hidden;
+        position: relative;
+         a{
+            text-decoration: none;
+          img{
+            width: 70%;
+            margin-top: 50px;
+          }
+          h6{
+            margin-top: 40px;
+            color: #333333;
+            font-size: 14px;
+            margin-bottom: 11px;
+          }
+          p{
+            color: #ff6700;
+            margin-bottom: 12px;
+          }
+          div{
+            color: #b0b0bb;
+          }
+          
+         }
+         
+         .join-cart{
+             a{
+                 display: inline-block;
+            border: 1px solid #ff6700;
+            color: #ff6700;
+            // padding: 5px;
+            width: 120px;
+            height: 28px;
+            line-height: 26px;
+            background-color: #ffffff;
+            transform: translateY(18px);
+            transition:all .5s;
+            &:hover{
+            background-color: #ff6700;
+             color: #ffffff;
+            }
+             }
+            //  transform: translateY(-30px);
+         }
+         .join-hint{
+             position: absolute;
+             top: 0;
+             display: none;
+             a{
+                width: 234px;
+                color: #ffffff;
+                display: block;
+                background-color: #83C44E;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+             }
+         }
+         &:hover{
+            .join-cart{
+                a{ transform: translateY(-25px);}
+               
+            }
+         }
+        }
+        
+        li:nth-child(5n){
+         margin-right: 0px;
+        }
+        li:nth-child(1){
+         .join-cart{
+            transform: translateY(20px);
+         }
+        }
+     }
+ }
+}

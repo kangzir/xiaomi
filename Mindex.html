@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reas.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1876882_5baea97qnjq.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>小米账号 - 登录</title>
+    <style>
+        /* body .fool-bm-panel{
+            position: absolute;
+            margin-bottom: 200px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="h_panel w">
+     <div class="h_logo">
+      <a href="./idnex.html"><img src="./img/mizhuce-logo.png" alt=""></a>
+     </div>
+    </div>
+    <div class="login_banner_panel">
+     <a href="./idnex.html"></a>
+    </div>
+    <div class="wrap">
+     <div class="layout_panel w">
+      <div class="layout">
+       <div class="main-content">
+            <!-- 账号 扫描 -->
+        <div class="nav_tabs_panel">
+         <div class="nav">
+          <a href="#btn1" class="actiov">账号登录</a>
+          <a href="#btn2">扫描登录</a>
+          <span></span>
+         </div>
+        </div>
+        <div id="tab-zhu">
+         <!-- form -->
+        <div class="fomr-panel-wrap rom">
+            <div class="form_panel">
+                <form >
+                    <input type="text" name="user" placeholder="邮箱/手机号/小米ID">
+                <input type="password" name="password" placeholder="密码"> 
+                </form>
+               </div>
+               <!-- 登录 -->
+               <div class="denglu_panel">
+                <button class="btn">登录</button>
+               </div>
+               <!--  -->
+               <div class="re_pa_panel">
+                   <!-- 手机登录 -->
+                <div class="zhuce">
+                 <a href="#">手机短信登录/注册</a>
+                </div>
+                <div class="liji">
+                 <a href="./zhuce.html">立即注册</a>
+                 <span>|</span>
+                 <a href="./zhaoh.html">忘了密码</a>
+                </div>
+               </div>
+               <div class="qita">
+                <fieldset>
+                    <legend>其他方式登录</legend>
+                </fieldset>
+                 <div class="icon">
+                  <a href="#"><i class="iconfont icon-QQ1"></i></a>
+                  <a href="#"><i class="iconfont icon-weibo1"></i></a>
+                  <a href="#"><i class="iconfont icon-zhifubao"></i></a>
+                  <a href="#"><i class="iconfont icon-weixin"></i></a>
+                 </div>
+               </div>
+               
+        </div>
+        <!-- app-扫描 -->
+        <div class="app_panel rom">
+         <div class="img-app">
+          <img src="./img/mi—app.png" alt="">
+         </div>
+         <div class="app-content">
+          <p>使用 <span>小米商城APP </span>扫一扫</p>
+          <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+         </div>
+        </div>
+        </div>
+        
+       </div>
+       
+      </div>
+
+     </div>
+     
+     
+    </div>
+    <div class="fool-bm-panel">
+        <div class="fool-bm">
+            <div class="jianti">
+             <ul>
+                 <li><a href="#">简体</a></li>
+                 <span>|</span>
+                 <li><a href="#">繁体</a></li>
+                 <span>|</span>
+                 <li><a href="#">English</a></li>
+                 <span>|</span>
+                 <li><a href="#">常见问题</a></li>
+                 <span>|</span>
+                 <li><a href="#">隐私政策</a></li>
+             </ul>
+            </div>
+            <div class="bianhao">
+             <p>米公司版权所有-京ICP备10046444- <span><img src=" https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" alt=""></span>
+             <a href="#">京公网安备11010802020134号</a>-京ICP证110507号
+             </p>
+            </div>
+          </div>
+     </div>
+</body>
+<script src="./jQuery库/jquery-1.12.3.min.js"></script>
+<script>
+    $('.nav_tabs_panel .nav a').click(function(){
+        // alert('msg');
+        
+        $(this).addClass('actiov')
+        $('.nav_tabs_panel .nav a').not($(this)).removeClass('actiov')
+
+        var index = $(this).index()
+        var tabzhu = $('#tab-zhu .rom')
+        tabzhu.eq(index).show()
+        // console.log(tabzhu);
+        
+        tabzhu.not(tabzhu.eq(index)).hide()
+    })
+ </script>
+ <script>
+     $('.denglu_panel').click(function(){
+        var form = $('.form_panel form').serialize()
+         $.ajax({
+            url:'../postData.php',
+            data:form,
+            type:'post',
+            success:function(data){
+             console.log(data);
+            }
+         })
+     })
+  </script>
+</html>

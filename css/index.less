@@ -244,45 +244,7 @@
         }
       }
     }
-    // 限购体 列表
-    .flashsale-list{
-     width: 978px;
-     height: 340px;
-     margin-left: 14px;
-     .swiper-slide{
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         border-top: 1px solid yellowgreen;
-        background-color: #ffffff;
-         margin-right: 5px;
-      a{
-        text-decoration: none;
-        width: 234px;
-        height: 340px;
-        img{
-         width: 80%;
-         margin-left: 25px;
-         margin-top: 40px;
-        }
-        h6{
-         text-align: center;
-         color: #000000;
-        }
-        p{
-         color: #b6aeae;
-         text-align: center;
-         font-size: 13px;
-         span{
-         font-size: 15px;
-
-          color: #FF6700;
-         }
-        }
-      }
-     }
-    }
+    
     .swiper-controls{
         position: absolute;
         right: 16px;
@@ -605,6 +567,49 @@
  }
 }
 }
+// 限购体 列表
+.flashsale-list{
+  width: 978px;
+  height: 340px;
+  margin-left: 14px;
+  .swiper-wrapper{
+    display: flex;
+  }
+  .swiper-slide{
+    flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid yellowgreen;
+     background-color: #ffffff;
+      margin-right: 5px;
+      transform:none !important;
+   a{
+     text-decoration: none;
+     width: 234px;
+     height: 340px;
+     img{
+      width: 80%;
+      margin-left: 25px;
+      margin-top: 40px;
+     }
+     h6{
+      text-align: center;
+      color: #000000;
+     }
+     p{
+      color: #b6aeae;
+      text-align: center;
+      font-size: 13px;
+      span{
+      font-size: 15px;
+       color: #FF6700;
+      }
+     }
+   }
+  }
+ }
 #carouselExampleIndicators{
  .carousel-control-prev{
   margin-left: 290px;
